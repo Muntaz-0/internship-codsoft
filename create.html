@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Create Quiz | QuizCraft</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Create Quiz</h1>
+
+<form onsubmit="saveQuiz(); return false;">
+
+<input
+type="text"
+id="quizTitle"
+placeholder="Quiz Title"
+required>
+
+<br><br>
+
+<input
+type="text"
+id="question"
+placeholder="Question"
+required>
+
+<br><br>
+
+<input
+type="text"
+id="optionA"
+placeholder="Option A"
+required>
+
+<br><br>
+
+<input
+type="text"
+id="optionB"
+placeholder="Option B"
+required>
+
+<br><br>
+
+<input
+type="text"
+id="optionC"
+placeholder="Option C"
+required>
+
+<br><br>
+
+<input
+type="text"
+id="optionD"
+placeholder="Option D"
+required>
+
+<br><br>
+
+<select id="answer">
+
+<option value="A">Correct Answer: A</option>
+
+<option value="B">Correct Answer: B</option>
+
+<option value="C">Correct Answer: C</option>
+
+<option value="D">Correct Answer: D</option>
+
+</select>
+
+<br><br>
+
+<button class="btn" type="submit">
+
+Save Quiz
+
+</button>
+
+</form>
+
+<br>
+
+<a href="quizzes.html" class="btn">
+
+View Saved Quizzes
+
+</a>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
